@@ -2,6 +2,7 @@ package no.mesan.fag.reactive.scala.actors
 
 import akka.actor.{ActorLogging, Props, ActorRef, Actor}
 import no.mesan.fag.reactive.scala.actors.BildeAnsvarlig.FoundImage
+import no.mesan.fag.reactive.scala.pictures.ThumbnailCreator
 
 import scala.util.Random
 
@@ -10,17 +11,11 @@ class BildeLager(klientAnsvarlig: ActorRef) extends Actor with ActorLogging with
   import BildeLager.ImageResult
   traceCreate(s"BildeLager hos $klientAnsvarlig")
 
-  def thumbnailFunction(url: String): String = {
-    // TODO Juks & bedrag!
-    Thread.sleep(Random.nextInt(200))
-    url
-  }
-
   override def receive = {
     case image: FoundImage =>
       image.traceReceive(this)
       val url = image.url
-      klientAnsvarlig ! ImageResult(url, thumbnailFunction(url))
+      klientAnsvarlig ! ImageResult(url, ThumbnailCreator.create(url))
       context stop self
   }
 }
