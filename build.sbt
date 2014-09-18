@@ -12,7 +12,8 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-actor" % "2.3.4",
   "org.jsoup" % "jsoup" % "1.7.2",
   "org.scalatest" %% "scalatest" % "2.1.6" % "test",
-  "junit" % "junit" % "4.11" % "test"
+  "junit" % "junit" % "4.11" % "test",
+  "org.mockito" % "mockito-all" % "1.8.4" % "test"
 )
 
 
