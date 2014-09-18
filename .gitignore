@@ -1,5 +1,6 @@
 *.class
 *.log
+/logs
 
 # sbt specific
 .cache/
@@ -34,6 +35,7 @@ hs_err_pid*
 *.iws
 *.ids
 /.idea
+atlassian-ide-plugin.xml
 
 # OS X-morsomheter
 .DS_Store

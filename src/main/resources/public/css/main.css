@@ -1,0 +1,58 @@
+#debug {
+    display: none;
+}
+
+#stopbutton {
+    display: none;
+    float: right;
+    margin-top: -7px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+.panel-body > .list-group {
+    margin: 0;
+}
+
+.list-group-item img { max-width: 100px; max-height: 100px; }
+
+.list-group-item.show {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: rgba(50, 50, 50, 0.95) !important;
+    top: 0;
+    left: 0;
+    border-radius: 0;
+    border: none;
+    z-index: 1000;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.list-group-item.show .helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.list-group-item.show img {
+    max-width: none;
+    max-height: none;
+    width:100%;
+    display: inline-block;
+    vertical-align: middle;
+    border: 20px solid white;
+}
+
+.list-group-item .list-group-item-text {
+    position: absolute;
+    top: 10px;
+    left: 125px;
+}
+
+.list-group-item.show .list-group-item-text {
+    visibility: hidden;
+}
