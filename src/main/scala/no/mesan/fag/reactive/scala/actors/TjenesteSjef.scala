@@ -35,8 +35,7 @@ object UrlyBurd { // Fra http://stackoverflow.com/questions/7586605/scala-patter
   ))
 
   def getHostPart(url: String) = {
-    val u = new java.net.URL(url)
-    val h= u match {
+    val h= new java.net.URL(url) match {
       case UrlyBurd(_, host, _, _) => host
     }
     // Oversett www.mesan.no til mesan.no
