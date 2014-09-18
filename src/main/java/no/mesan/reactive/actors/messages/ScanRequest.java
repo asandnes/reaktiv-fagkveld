@@ -9,7 +9,7 @@ public class ScanRequest {
 
     public ScanRequest(final Session session, final String url) {
         this.session = session;
-        this.url = url;
+        this.url = url.startsWith("http://") ? url : "http://".concat(url);
     }
 
     public Session getSession() {
