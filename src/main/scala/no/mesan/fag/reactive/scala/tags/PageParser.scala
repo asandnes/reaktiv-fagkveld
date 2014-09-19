@@ -18,7 +18,7 @@ object PageParser {
 
   def parseTags(url: String): (List[String], List[String]) = {
     try {
-      val doc= Jsoup.connect(url).get()
+      val doc= Jsoup.connect(url).timeout(10000).get()
       val aHrefs= parseAttrs(url, "a", "abs:href", doc)
       val imgSrc=  parseAttrs(url, "img", "abs:src", doc)
       (aHrefs, imgSrc)

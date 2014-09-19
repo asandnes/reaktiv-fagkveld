@@ -4,8 +4,6 @@ import akka.actor.{ActorLogging, Props, ActorRef, Actor}
 import no.mesan.fag.reactive.scala.actors.BildeAnsvarlig.FoundImage
 import no.mesan.fag.reactive.scala.pictures.ThumbnailCreator
 
-import scala.util.Random
-
 /** Lager thumbnails av bilder, sender svar tilbake til klientansvarlig. */
 class BildeLager(klientAnsvarlig: ActorRef) extends Actor with ActorLogging with Tracer {
   import BildeLager.ImageResult
