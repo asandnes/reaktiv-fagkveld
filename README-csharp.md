@@ -1,6 +1,6 @@
 # Om C#-utgangspunktet
 
-Denne koden bruker [Akka.NET](http://akkadotnet.github.io/wiki/), som er en .NET-port av Akka. Akka.NET fungerer veldig likt som Java-varianten av Akka.
+Denne koden bruker [Akka.NET](http://akkadotnet.github.io/wiki/), som er en .NET-port av Akka. Akka.NET fungerer veldig likt som Java-varianten av Akka. Akka.NET er lagt til med NuGet i prosjektet.
 
 Det er to hovedklasser du trenger å tenke på: `TjenesteSjef` og `KlientAnsvarlig`. Disse to Actor-ene har tilsvarende roller som i Java-oppgavene. Du skal i utgangspunktet ikke trenge å gjøre noen endringer i WinForms-koden, men det kan selvfølgelig hende det har sneket seg inn noen feil... :boom:
 
