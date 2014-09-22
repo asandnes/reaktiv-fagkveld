@@ -1,39 +1,68 @@
-*.class
+# OS junk files
+[Tt]humbs.db
+*.DS_Store
+
+# Visual Studio files
+*.[Oo]bj
+*.user
+*.aps
+*.pch
+*.vspscc
+*.vssscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.[Cc]ache
+*.ilk
 *.log
+*.lib
+*.sbr
+*.sdf
+*.opensdf
+*.unsuccessfulbuild
+ipch/
+[Oo]bj/
+[Bb]in
+[Dd]ebug*/
+[Rr]elease*/
+Ankh.NoLoad
 
-# sbt specific
-.cache/
-.history/
-.lib/
-dist/*
-target/
-lib_managed/
-src_managed/
-project/boot/
-project/plugins/project/
+# MonoDevelop
+*.pidb
+*.userprefs
 
-# Scala-IDE specific
-.scala_dependencies
-.worksheet
+# Tooling
+_ReSharper*/
+*.resharper
+[Tt]est[Rr]esult*
+*.sass-cache
 
-# Package Files #
-*.war
-*.ear
+# Project files
+[Bb]uild/
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+# Subversion files
+.svn
 
-# Eclipse-ting
-.project
-.classpath
-.settings/
+# Office Temp Files
+~$*
 
-# IDEA-ting
-*.iml
-*.ipr
-*.iws
-*.ids
-/.idea
+# vim Temp Files
+*~
 
-# OS X-morsomheter
-.DS_Store
+# NuGet
+packages/
+*.nupkg
+
+# ncrunch
+*ncrunch*
+*crunch*.local.xml
+
+# visual studio database projects
+*.dbmdl
+
+# Test files
+*.testsettings
