@@ -9,3 +9,4 @@ Egne brancher for oppgaver og løsningsforslag per teknologi.
 2. java-svar (Løsningsforslag for Java)
 3. scala-oppgave (Utgangspunkt for Scala)
 4. scala-svar (Løsningsforslag for Scala)
+5. csharp-oppgave (Utgangspunkt for C&#x266f;)
